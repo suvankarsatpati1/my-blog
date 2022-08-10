@@ -26,9 +26,6 @@ jobs:
       - attach_workspace:
           at: .
       - run:
-          name: run lint
-          command: pnpm run lint:ci --all
-      - run:
           name: run unit test
           command: pnpm run test:unit        
 
