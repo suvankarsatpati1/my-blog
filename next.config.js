@@ -6,7 +6,8 @@ const withNextra = require('nextra')({
 })
 
 const nextConfig = {
-  // any configs you need
+  "presets": ["next/babel"]
 }
+
 
 module.exports = withNextra(nextConfig)
