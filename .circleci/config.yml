@@ -23,8 +23,6 @@ jobs:
     executor: node/default
     steps:
       - install-pnpm
-      - attach_workspace:
-          at: .
       - run:
           name: run unit test
           command: pnpm run test:unit        
@@ -34,4 +32,4 @@ workflows:
     jobs:
       - install-deps
       - lint-and-test:
-          name: my-blog      
+          name: my-blog
