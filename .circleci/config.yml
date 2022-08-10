@@ -25,7 +25,7 @@ jobs:
       - install-pnpm
       - run:
           name: run unit test
-          command: pnpm run test:unit        
+          command: pnpm run test        
 
 workflows:
   test:
